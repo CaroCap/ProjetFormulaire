@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    {{form_start (formAeroport) }}
+    {{form_widget (formAeroport) }}
+        <input type="submit" value="Enregistrer">
+    {{form_end (formAeroport) }}
+
+{% endblock %}

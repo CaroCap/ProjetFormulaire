@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    {{form_start (formLivre) }}
+    {{form_widget (formLivre) }}
+    {# Créer le bouton ici #}
+    <input type="submit" value="Enregistrer">
+    {{form_end (formLivre) }}
+
+{% endblock %}

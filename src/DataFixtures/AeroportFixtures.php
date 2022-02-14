@@ -15,7 +15,7 @@ class AeroportFixtures extends Fixture
             $a1 = new Aeroport();
             $a1->setNom("Bruxelles Charleroi ".$i);
             $a1->setCode("CLR");
-            $a1->setDateMisEnService(new \DateTime());
+            $a1->setDateMiseEnService(new \DateTime());
             $om->persist($a1);
         }
         $om->flush();
@@ -30,7 +30,7 @@ class AeroportFixtures extends Fixture
             $a1 = new Aeroport();
             $a1->setNom($faker->city()); // avec ou sans () c'est la même
             $a1->setCode($faker->postcode);
-            $a1->setDateMisEnService(new \DateTime());
+            $a1->setDateMiseEnService(new \DateTime());
             $om->persist($a1);
         }
         $om->flush();

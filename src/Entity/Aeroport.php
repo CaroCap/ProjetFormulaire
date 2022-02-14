@@ -20,7 +20,7 @@ class Aeroport
     private $code;
 
     #[ORM\Column(type: 'date', nullable: true)]
-    private $dateMisEnService;
+    private $dateMiseEnService;
 
     #[ORM\Column(type: 'time', nullable: true)]
     private $heureMiseEnService;
@@ -57,14 +57,14 @@ class Aeroport
         return $this;
     }
 
-    public function getDateMisEnService(): ?\DateTimeInterface
+    public function getDateMiseEnService(): ?\DateTimeInterface
     {
-        return $this->dateMisEnService;
+        return $this->dateMiseEnService;
     }
 
-    public function setDateMisEnService(?\DateTimeInterface $dateMisEnService): self
+    public function setDateMiseEnService(?\DateTimeInterface $dateMiseEnService): self
     {
-        $this->dateMisEnService = $dateMisEnService;
+        $this->dateMiseEnService = $dateMiseEnService;
 
         return $this;
     }

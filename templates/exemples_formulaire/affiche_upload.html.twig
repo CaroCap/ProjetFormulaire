@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<h1>Voici le formulaire d'upload</h1>
+{{form_start (formUpload)}}
+{{form_widget (formUpload)}}
+    <input type='submit' value='Envoyer'>
+{{form_end (formUpload)}}
+
+
+{% endblock %}
