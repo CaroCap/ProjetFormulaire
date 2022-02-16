@@ -21,7 +21,13 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/app.js')
+    .addEntry('vue1', './assets/vue1.js')
 
+    // Pour gérer les images entre Assets et Public
+    .copyFiles({
+        from: './assets/imagesOriginales', 
+        to: 'imagesCopy/[path][name].[hash:8].[ext]'
+    })
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
 

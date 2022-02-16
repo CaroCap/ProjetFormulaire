@@ -1,0 +1,10 @@
+body{
+    background-color: purple;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-weight: bold; */
+    margin: 3vw;
+}
+
+label{
+    margin-right: 15px;
+}

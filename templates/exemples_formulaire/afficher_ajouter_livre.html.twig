@@ -1,11 +1,24 @@
 {% extends "base.html.twig" %}
 
+{% block stylesheets %}
+    {{ parent() }} 
+    {{ encore_entry_link_tags('vue1') }}
+{% endblock %}
+
+{% block javascript %}
+    {# POUR GARDER AUSSI LA PARTIE DE base.html.twig #}
+    {{ parent() }} 
+    {{ encore_entry_link_tags('vue1') }}
+{% endblock %}
+
 {% block body %}
 
     {{form_start (formLivre) }}
     {{form_widget (formLivre) }}
     {# Créer le bouton ici #}
-    <input type="submit" value="Enregistrer">
+    <input class="" type="submit" value="Enregistrer">
+    <button class='btn-primary' type='submit'>Envoyer</button>
     {{form_end (formLivre) }}
 
+    <img src="{{ asset('build/imagesCopy/flamants_roses.jpg') }}"/>
 {% endblock %}
